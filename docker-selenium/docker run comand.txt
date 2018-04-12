@@ -1,0 +1,4 @@
+docker run -it --rm --name my-running-app  -v "$PWD":/myapp my-selenium-app sh
+
+
+docker run -it --rm --name my-running-app  -v "$PWD":/myapp -w /myapp my-selenium-app python selenium_downloader.py
